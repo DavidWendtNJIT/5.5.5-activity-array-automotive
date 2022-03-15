@@ -18,10 +18,10 @@ class Car extends Vehicle {
     this.scheduleService = false;
   }
 
-  loadPassenger () {
+  loadPassenger (num) {
     if (this.passenger < this.maxPassengers) {
       console.log ('true')
-      availableRoom = true;
+      availableRoom === true;
       }
       else {
         alert ('No room for any more passengers')
@@ -31,17 +31,17 @@ class Car extends Vehicle {
   start () {
     if (this.fuel > 0) {
       console.log ('Start the car')
-      start = true;
+      start === true;
     }
       else {
         console.log ('No fuel')
       }
   }
 
-  scheduleService () {
+  scheduleService (mileage) {
     if (mileage > 30000) {
       console.log ('Time for some maintenaince')
-      timeForMaintence = true;
+      scheduleService === true;
     }
       else {
         console.log ('It runs like a dream!')
